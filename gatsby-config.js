@@ -4,6 +4,7 @@ module.exports = {
     title: "Balala Gatsby",
   },
   plugins: [
+    "gatsby-plugin-typescript",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",

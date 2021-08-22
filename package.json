@@ -1,6 +1,6 @@
 {
   "name": "balala-gatsby",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "private": true,
   "description": "Balala Gatsby",
   "author": "roylaw",
@@ -12,7 +12,9 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
@@ -34,5 +36,15 @@
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "styled-components": "^5.3.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.29.2",
+    "@typescript-eslint/parser": "^4.29.2",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "gatsby-plugin-typescript": "^3.12.0",
+    "typescript": "^4.3.5"
   }
 }
